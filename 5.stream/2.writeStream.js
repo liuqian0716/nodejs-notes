@@ -44,3 +44,13 @@
 //         }
 //     }
 // }
+
+// var fs = require('fs');
+// var src = fs.createReadStream('128.txt');
+// var dest = fs.createWriteStream('test.txt');
+// src.pipe(dest);
+
+var bin = new Buffer.from('hello', 'utf-8'); // => <Buffer 68 65 6c 6c 6f>
+let result = bin.slice(2)
+console.log(bin);
+console.log(result);
